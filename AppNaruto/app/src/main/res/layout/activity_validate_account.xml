@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:textColorLink="#FF5722"
+            android:textColorLink="#000000"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
@@ -49,6 +49,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:textColorHint="#000000"
             tools:ignore="TouchTargetSizeCheck" />
 
         <Button
