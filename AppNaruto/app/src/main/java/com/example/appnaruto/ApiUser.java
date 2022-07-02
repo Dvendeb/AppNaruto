@@ -30,4 +30,16 @@ public interface ApiUser {
             @Field("email") String email,
             @Field("code") String code
     );
+
+    @FormUrlEncoded
+    @POST("logout")
+    Call<User>LOGOUT_CALL(
+            @Field("token") String token
+    );
+
+    @FormUrlEncoded
+    @POST("index")
+    Call<User>INDEX_CALL(
+            @Field("token") String token
+    );
 }

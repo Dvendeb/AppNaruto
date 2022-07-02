@@ -36,7 +36,8 @@
             android:minHeight="48dp"
             android:textColor="@color/white"
             android:textColorHighlight="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColorHint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
         <TextView
@@ -58,15 +59,8 @@
             android:minHeight="48dp"
             android:textColor="@color/white"
             android:textColorHighlight="@color/white"
-            android:textColorHint="@color/white" />
-
-        <TextView
-            android:id="@+id/txt_forgot_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/olvidaste_tu_contrase_a"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColorHint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/btn_login"

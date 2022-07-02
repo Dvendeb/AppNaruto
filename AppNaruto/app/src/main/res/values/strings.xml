@@ -11,4 +11,8 @@
     <string name="codigo_de_validacion">Codigo de validacion:</string>
     <string name="validar">Validar</string>
     <string name="validacion_de_cuenta">Validacion de cuenta</string>
+    <string name="tu_token_es">Tu token es:</string>
+    <string name="hola_bienvenido">Hola Bienvenido</string>
+    <string name="cerrar_sesion">CERRAR SESION</string>
+    <string name="ver_personajes">Ver Personajes</string>
 </resources>

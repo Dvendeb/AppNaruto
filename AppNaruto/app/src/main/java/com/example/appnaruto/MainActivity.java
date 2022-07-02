@@ -51,9 +51,16 @@ public class MainActivity extends AppCompatActivity {
                         if(response.isSuccessful() && response.body() !=null){
                             edtemail.getText().clear();
                             edtpassword.getText().clear();
+                            String tokenInter=response.body().getToken();
+                            Intent intent =new Intent(MainActivity.this,Logueado.class);
+                            intent.putExtra("token",tokenInter);
+                            startActivity(intent);
+                            finish();
                             Toast.makeText(MainActivity.this,"Bienvenido",Toast.LENGTH_SHORT).show();
                         }else if(response.code()==401){
                             Toast.makeText(MainActivity.this,"Debes validar tu correo",Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(MainActivity.this,ValidateAccount.class));
+                            finish();
                         }else{
                             Toast.makeText(MainActivity.this,"Error en las credenciales",Toast.LENGTH_SHORT).show();
                         }

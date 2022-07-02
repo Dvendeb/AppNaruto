@@ -44,6 +44,10 @@ public class Register extends AppCompatActivity {
                 String password=edtPassword.getText().toString().trim();
                 String verify_password=edtVerifyPassword.getText().toString().trim();
 
+                if(password.length()<8){
+                    edtPassword.setError("la contraseña debe ser mayotr a 8 caracteres");
+                    edtPassword.setFocusable(true);
+                }
                 loggin.setLevel(HttpLoggingInterceptor.Level.BODY);
 
                 OkHttpClient.Builder httpClient=new OkHttpClient.Builder();
@@ -69,6 +73,7 @@ public class Register extends AppCompatActivity {
                                 edtPassword.getText().clear();
                                 edtVerifyPassword.getText().clear();
                                 startActivity(new Intent(Register.this,MainActivity.class));
+                                finish();
                                 Toast.makeText(Register.this,"REGISTRADO CORRECTAMENTE",Toast.LENGTH_SHORT).show();
                             }else{
                                 Toast.makeText(Register.this,"ERROR VERIFICA TUS CREDENCIALES", Toast.LENGTH_SHORT).show();

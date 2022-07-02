@@ -2,6 +2,7 @@ package com.example.appnaruto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +18,6 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ValidateAccount extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +51,8 @@ public class ValidateAccount extends AppCompatActivity {
                             edtEmail.getText().clear();
                             edtCode.getText().clear();
                             Toast.makeText(ValidateAccount.this, "SE HA VALIDADO CORRECTAMENTE EL CORREO", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(ValidateAccount.this,MainActivity.class));
+                            finish();
                         }else{
                             Toast.makeText(ValidateAccount.this, "NO SE HA PORIDO VERIFICAR CORRECTAMENRE", Toast.LENGTH_SHORT).show();
                         }

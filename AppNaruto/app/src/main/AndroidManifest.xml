@@ -16,6 +16,9 @@
         android:theme="@style/Theme.AppNaruto"
         tools:targetApi="31">
         <activity
+            android:name=".ShowCharacters"
+            android:exported="false" />
+        <activity
             android:name=".ValidateAccount"
             android:exported="false" />
         <activity
