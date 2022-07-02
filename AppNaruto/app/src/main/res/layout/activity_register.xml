@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_naruto"
+    android:background="@drawable/este"
     tools:context=".Register">
 
     <LinearLayout
@@ -149,9 +149,12 @@
 
         <Button
             android:id="@+id/btn_register"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrar" />
+            android:text="Registrar"
+            android:textColor="#000000"
+            android:textSize="24sp" />
 
     </LinearLayout>
 

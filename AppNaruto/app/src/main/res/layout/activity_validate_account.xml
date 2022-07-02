@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/resg"
     tools:context=".ValidateAccount">
 
     <LinearLayout
@@ -31,6 +32,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress"
+            android:textColorLink="#FF5722"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
@@ -51,12 +53,14 @@
 
         <Button
             android:id="@+id/btn_validate"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/black"
             android:text="@string/validar"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <TextView
@@ -65,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:text="@string/validacion_de_cuenta"
+        android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

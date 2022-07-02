@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_naruto"
+    android:background="@drawable/wpaper"
     tools:context=".MainActivity" >
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="324dp"
         android:layout_height="404dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="76dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,10 +40,10 @@
 
 
         <TextView
-            android:layout_marginTop="20dp"
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="@string/contrase_a"
             android:textColor="@color/white"
             android:textSize="16sp" />
@@ -60,30 +60,37 @@
             android:textColorHighlight="@color/white"
             android:textColorHint="@color/white" />
 
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#000000"
+            android:text="@string/iniciar_sesion"
+            android:textColor="#F8F6F6"
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/txt_forgot_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/olvidaste_tu_contrase_a"
             android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="@string/iniciar_sesion" />
+            android:textColorHint="@color/white"
+            android:textIsSelectable="false" />
 
         <Button
             android:id="@+id/btn_register"
-            android:layout_width="match_parent"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/black"
             android:onClick="registerActivity"
             android:text="@string/registrate_aqui"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
