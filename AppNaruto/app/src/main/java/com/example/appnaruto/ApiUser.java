@@ -3,7 +3,9 @@ package com.example.appnaruto;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 
 public interface ApiUser {
     @FormUrlEncoded
@@ -42,4 +44,8 @@ public interface ApiUser {
     Call<User>INDEX_CALL(
             @Field("token") String token
     );
+
+
+    @GET("pokemon/{id}")
+    Call<Character> FIND(@Path("id") String id);
 }

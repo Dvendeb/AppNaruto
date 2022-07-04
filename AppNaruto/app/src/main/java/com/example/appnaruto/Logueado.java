@@ -32,6 +32,7 @@ public class Logueado extends AppCompatActivity {
 
         txttoken.setText(tokenI);
         Button btnLogout=findViewById(R.id.btn_logout);
+        Button btnPokemons=findViewById(R.id.btn_pokemones);
 
 
         btnLogout.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +67,14 @@ public class Logueado extends AppCompatActivity {
                     }
                 });
 
+            }
+        });
+        btnPokemons.setOnClickListener(new View.OnClickListener() {
+            Intent intent=new Intent(Logueado.this,ShowCharacters.class);
+            @Override
+            public void onClick(View v) {
+                startActivity(intent);
+                finish();
             }
         });
 

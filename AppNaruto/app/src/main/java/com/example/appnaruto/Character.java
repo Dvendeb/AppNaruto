@@ -1,10 +1,27 @@
 package com.example.appnaruto;
 
+
 public class Character {
+
+    public String id;
     public String name;
-    public String clan;
-    public String village;
-    public String jutsu;
+    public String base_experience;
+
+    public String getBase_experience() {
+        return base_experience;
+    }
+
+    public void setBase_experience(String base_experience) {
+        this.base_experience = base_experience;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -14,34 +31,9 @@ public class Character {
         this.name = name;
     }
 
-    public String getClan() {
-        return clan;
-    }
-
-    public void setClan(String clan) {
-        this.clan = clan;
-    }
-
-    public String getVillage() {
-        return village;
-    }
-
-    public void setVillage(String village) {
-        this.village = village;
-    }
-
-    public String getJutsu() {
-        return jutsu;
-    }
-
-    public void setJutsu(String jutsu) {
-        this.jutsu = jutsu;
-    }
-
-    public Character(String name, String clan, String village, String jutsu) {
+    public Character(String id, String name, String base_experience) {
+        this.id = id;
         this.name = name;
-        this.clan = clan;
-        this.village = village;
-        this.jutsu = jutsu;
+        this.base_experience = base_experience;
     }
 }

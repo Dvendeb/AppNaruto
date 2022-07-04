@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_naruto"
+    android:background="@color/design_default_color_error"
     tools:context=".Register">
 
     <LinearLayout
@@ -30,10 +30,10 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:textColor="@color/white"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
-            android:importantForAutofill="no" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView5"

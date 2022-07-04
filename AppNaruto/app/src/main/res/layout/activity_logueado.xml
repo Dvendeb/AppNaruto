@@ -4,26 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".Logueado">
 
     <LinearLayout
-        android:layout_width="330dp"
-        android:layout_height="666dp"
+        android:layout_width="351dp"
+        android:layout_height="678dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.246">
+        app:layout_constraintVertical_bias="0.68">
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/hola_bienvenido"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:ignore="TextContrastCheck" />
 
         <TextView
             android:id="@+id/textView14"
@@ -31,21 +33,33 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="@string/tu_token_es"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
 
         <TextView
             android:id="@+id/txt_token"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btn_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="300dp"
-            android:text="@string/cerrar_sesion" />
+            android:layout_marginTop="200dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:text="@string/cerrar_sesion"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_pokemones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_pokemons"
+            android:text="@string/ver_pokemones"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
